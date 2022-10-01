@@ -1,0 +1,26 @@
+.flex-container {
+    @media screen and (max-width: 767px) {
+        &.is-open {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            overflow-y: scroll;
+        }
+
+        &.is-open .header__menu {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1230px) {
+        width: 100%;
+    }
+}

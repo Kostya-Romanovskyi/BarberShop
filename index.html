@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./images/Logo.svg" alt="Logo BarberShop" />
+          </a>
+        </div>
+
+        <div class="flex-container js-menu-container">
+          <svg class="header__menu js-open-menu" width="40" height="40">
+            <use href="./images/sprite.svg#menu40px"></use>
+          </svg>
+          <nav class="nav">
+            <svg class="header__close js-close-menu" width="40" height="40">
+              <use href="./images/sprite.svg#close40px"></use>
+            </svg>
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Services and prices</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Barbers</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Contacts</a>
+              </li>
+            </ul>
+
+            <div class="contacts">
+              <a class="contacts__tel link" href="tel:+380441111111"
+                >+38 044 111 11 11
+              </a>
+              <button class="contacts__button" type="button">
+                Online-booking
+              </button>
+            </div>
+
+            <ul class="social-list social-list--none list">
+              <li class="social-list__item">
+                <a class="social-list__link link" href="">Instagram</a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link link" href="">Youtube</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="width" style="height: 1000px"></div>
+    </main>
+
+    <script src="./js/header.burger.js"></script>
+  </body>
+</html>

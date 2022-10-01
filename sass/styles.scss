@@ -1,0 +1,14 @@
+// utils
+@import "./utils/variables";
+@import "./utils/placeholsers";
+@import "./utils/mixins";
+
+// GLOBAL-STYLES
+@import "./global/global-styles";
+
+// layouts
+@import "./layouts/header/header";
+@import "./layouts/header/flex-container";
+@import "./layouts/header/nav-list";
+@import "./layouts/header/contacts";
+@import "./layouts/header/social-list";
