@@ -1,5 +1,6 @@
 // utils
 @import "./utils/variables";
+@import "./utils/modern-normalize";
 @import "./utils/placeholsers";
 @import "./utils/mixins";
 
@@ -7,8 +8,21 @@
 @import "./global/global-styles";
 
 // layouts
+
+// header
 @import "./layouts/header/header";
 @import "./layouts/header/flex-container";
 @import "./layouts/header/nav-list";
 @import "./layouts/header/contacts";
 @import "./layouts/header/social-list";
+
+//hero
+@import "./layouts/hero/hero";
+
+@import "./global/section";
+
+//about
+
+@import "./layouts/about/about";
+@import "./layouts/prices/prices";
+@import "./layouts/prices/price-list";

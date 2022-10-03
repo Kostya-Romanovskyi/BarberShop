@@ -11,13 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
@@ -26,7 +19,7 @@
       <div class="container header__container">
         <div class="header__logo">
           <a href="./index.html">
-            <img src="./images/Logo.svg" alt="Logo BarberShop" />
+            <img src="./images/logo-white.svg" alt="Logo BarberShop" />
           </a>
           <svg class="header__menu js-open-menu" width="40" height="40">
             <use href="./images/sprite.svg#menu40px"></use>
@@ -76,6 +69,91 @@
     </header>
     <!-- MAIN -->
     <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-container">
+            <p class="uppertitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="lowertitle">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section">
+        <div class="container">
+          <p class="uppertitle">About</p>
+          <h2 class="title">Best Barbershop in your city</h2>
+          <p class="lowertitle lowertitle--indent">
+            If you want to add more confidence to your image, you should visit
+            us
+          </p>
+          <p class="about__text">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
+
+          <button class="about__button" type="button">online-booking</button>
+        </div>
+      </section>
+
+      <section class="prices section">
+        <div class="container">
+          <p class="uppertitle">Spend your time with the best masters</p>
+          <h2 class="prices__title">Services and prices</h2>
+
+          <div class="prices__flex-container">
+            <ul class="prices__list list">
+              <li class="prices__item">
+                <span class="prices__service">Men’s haircut</span>
+                <span class="prices__text">from 300 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service">Beard trim</span>
+                <span class="prices__text">from 200 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service">Mustache trim</span>
+                <span class="prices__text">from 200 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service">Straight razor shave</span>
+                <span class="prices__text">from 200 uah.</span>
+              </li>
+            </ul>
+
+            <ul class="prices__list list">
+              <li class="prices__item">
+                <span class="prices__service">Trainee’s haircut</span>
+                <span class="prices__text">from 50 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service">Haircut under the nozzle</span>
+                <span class="prices__text">from 200 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service"
+                  >Children’s haircut (0-12 y.o.)</span
+                >
+                <span class="prices__text">from 300 uah.</span>
+              </li>
+              <li class="prices__item">
+                <span class="prices__service"> Camouflage of grey hair</span>
+                <span class="prices__text">from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="prices__button prices__button--white">
+            online-booking
+          </button>
+        </div>
+      </section>
       <div class="width" style="height: 1000px"></div>
     </main>
 

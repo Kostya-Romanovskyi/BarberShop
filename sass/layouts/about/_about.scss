@@ -1,0 +1,35 @@
+.about {
+}
+.uppertitle {
+}
+.title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.05em;
+
+    margin-bottom: 20px;
+
+    color: $main-color;
+}
+.lowertitle {
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+.about__text {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+
+    letter-spacing: 0.02em;
+
+    margin-bottom: 40px;
+
+    color: $secondary-color;
+}
+.about__button {
+    @extend %button;
+
+    width: 160px;
+    height: 40px;
+}

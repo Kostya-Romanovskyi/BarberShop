@@ -68,7 +68,7 @@
     &:hover,
     &:focus {
         background-color: $active-color;
-        color: $white-color;
+        color: $main-color;
     }
 
     @media screen and (min-width: 372px) {
@@ -76,5 +76,7 @@
     }
     @media screen and (min-width: 768px) {
         width: 160px;
+
+        color: $white-color;
     }
 }
