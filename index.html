@@ -46,11 +46,11 @@
               </li>
             </ul>
 
-            <div class="contacts">
-              <a class="contacts__tel link" href="tel:+380441111111"
+            <div class="connect">
+              <a class="connect__tel link" href="tel:+380441111111"
                 >+38 044 111 11 11
               </a>
-              <button class="contacts__button" type="button">
+              <button class="connect__button" type="button">
                 Online-booking
               </button>
             </div>
@@ -72,9 +72,9 @@
       <section class="hero">
         <div class="container">
           <div class="hero-container">
-            <p class="uppertitle">A hair salon for men in Kyiv</p>
+            <p class="hero__upper-title">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
-            <p class="lowertitle">
+            <p class="hero__lower-title">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -84,9 +84,9 @@
 
       <section class="about section">
         <div class="container">
-          <p class="uppertitle">About</p>
-          <h2 class="title">Best Barbershop in your city</h2>
-          <p class="lowertitle lowertitle--indent">
+          <p class="about__upper-title">About</p>
+          <h2 class="about__title">Best Barbershop in your city</h2>
+          <p class="about__lower-title lowertitle--indent">
             If you want to add more confidence to your image, you should visit
             us
           </p>
@@ -104,7 +104,9 @@
 
       <section class="prices section">
         <div class="container">
-          <p class="uppertitle">Spend your time with the best masters</p>
+          <p class="prices__upper-title">
+            Spend your time with the best masters
+          </p>
           <h2 class="prices__title">Services and prices</h2>
 
           <div class="prices__flex-container">
@@ -154,8 +156,365 @@
           </button>
         </div>
       </section>
-      <div class="width" style="height: 1000px"></div>
+
+      <section class="benefits section">
+        <div class="container">
+          <p class="benefits__upper-title">Old traditional school</p>
+          <h2 class="benefits__title">&iquest;Why people come to us?</h2>
+          <p class="benefits__lower-title">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
+
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <b class="benefits__number"
+                >600 <sup class="benefits__plus">+</sup></b
+              >
+              <p class="benefits__text">Satisfied customers per day</p>
+            </li>
+            <li class="benefits__item">
+              <b class="benefits__number"
+                >50<sup class="benefits__plus">+</sup></b
+              >
+              <p class="benefits__text">Awards for excellent service</p>
+            </li>
+            <li class="benefits__item">
+              <b class="benefits__number"
+                >20<sup class="benefits__plus">+</sup></b
+              >
+              <p class="benefits__text">Kyiv’s best barbers</p>
+            </li>
+            <li class="benefits__item">
+              <b class="benefits__number"
+                >100<sup class="benefits__plus">+</sup></b
+              >
+              <p class="benefits__text">Gifts for regular customers</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="barbers section">
+        <div class="container">
+          <p class="barbers__upper-title">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 class="barbers__title">Our barbers</h2>
+          <ul class="barbers__list list">
+            <li class="barbers__item">
+              <div class="barbers__thumb">
+                <img
+                  class="barbers__img"
+                  srcset="
+                    ./images/barbers/john-smith1x_sm.jpg  418w,
+                    ./images/barbers/john-smith1x_md.jpg  450w,
+                    ./images/barbers/john-smith2x_lg.jpg  740w,
+                    ./images/barbers/john-smith2x_sm.jpg  836w,
+                    ./images/barbers/john-smith2x_md.jpg  900w,
+                    ./images/barbers/john-smith3x_sm.jpg 1254w,
+                    ./images/barbers/john-smith3x_md.jpg 1350w,
+                    ./images/barbers/john-smith3x_lg.jpg 1110w
+                  "
+                  src="./images/barbers/john-smith1x_sm.jpg"
+                  alt="John Smith"
+                  sizes="(min-width:1230px) 370px, (min-width:768px) 450px, (min-width:480px) 418px"
+                />
+              </div>
+              <h3 class="barbers__name">John Smith</h3>
+              <p class="barbers__discr">Extreme Barber</p>
+              <ul class="social-links list">
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item">
+              <div class="barbers__thumb">
+                <img
+                  class="barbers__img"
+                  srcset="
+                    ./images/barbers/michele-doe1x_sm.jpg  418w,
+                    ./images/barbers/michele-doe1x_md.jpg  450w,
+                    ./images/barbers/michele-doe2x_lg.jpg  740w,
+                    ./images/barbers/michele-doe2x_sm.jpg  836w,
+                    ./images/barbers/michele-doe2x_md.jpg  900w,
+                    ./images/barbers/michele-doe3x_sm.jpg 1254w,
+                    ./images/barbers/michele-doe3x_md.jpg 1350w,
+                    ./images/barbers/michele-doe3x_lg.jpg 1110w
+                  "
+                  src="./images/barbers/michele-doe1x_sm.jpg"
+                  alt="John Smith"
+                  sizes="(min-width:1230px) 370px, (min-width:768px) 450px, (min-width:480px) 418px"
+                />
+              </div>
+              <h3 class="barbers__name">John Smith</h3>
+              <p class="barbers__discr">Extreme Barber</p>
+              <ul class="social-links list">
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="barbers__item">
+              <div class="barbers__thumb">
+                <img
+                  class="barbers__img"
+                  srcset="
+                    ./images/barbers/alan-black1x_sm.jpg  418w,
+                    ./images/barbers/alan-black1x_md.jpg  450w,
+                    ./images/barbers/alan-black2x_lg.jpg  740w,
+                    ./images/barbers/alan-black2x_sm.jpg  836w,
+                    ./images/barbers/alan-black2x_md.jpg  900w,
+                    ./images/barbers/alan-black3x_sm.jpg 1254w,
+                    ./images/barbers/alan-black3x_md.jpg 1350w,
+                    ./images/barbers/alan-black3x_lg.jpg 1110w
+                  "
+                  src="./images/barbers/alan-black1x_sm.jpg"
+                  alt="John Smith"
+                  sizes="(min-width:1230px) 370px, (min-width:768px) 450px, (min-width:480px) 418px"
+                />
+              </div>
+              <h3 class="barbers__name">John Smith</h3>
+              <p class="barbers__discr">Extreme Barber</p>
+              <ul class="social-links list">
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </li>
+                <li class="social-links__item">
+                  <svg class="social-links__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="galary section">
+        <div class="container">
+          <p class="galary__upper-title">In Latin, "barba" means "beard"</p>
+          <ul class="galary__list">
+            <li class="galary__item">
+              <img
+                class="galary__img"
+                srcset="
+                  ./images/galary/gallery(1)270_lg.jpg   270w,
+                  ./images/galary/gallery(1)330_md.jpg   330w,
+                  ./images/galary/gallery(1)418_sm.jpg   418w,
+                  ./images/galary/gallery(1)540_lg.jpg   540w,
+                  ./images/galary/gallery(1)660_md.jpg   660w,
+                  ./images/galary/gallery(1)810_lg.jpg   810w,
+                  ./images/galary/gallery(1)836_sm.jpg   836w,
+                  ./images/galary/gallery(1)990_md.jpg   990w,
+                  ./images/galary/gallery(1)1254_sm.jpg 1254w
+                "
+                src="./images/galary/gallery(1)418_sm.jpg"
+                alt="barber haircut for
+              client"
+                sizes="(min-width:1230px) 270px, (min-width:768px) 330px, (min-width:480px) 418px, 100vw"
+              />
+            </li>
+            <li class="galary__item">
+              <img
+                class="galary__img"
+                srcset="
+                  ./images/galary/gallery(2)270_lg.jpg   270w,
+                  ./images/galary/gallery(2)330_md.jpg   330w,
+                  ./images/galary/gallery(2)418_sm.jpg   418w,
+                  ./images/galary/gallery(2)540_lg.jpg   540w,
+                  ./images/galary/gallery(2)660_md.jpg   660w,
+                  ./images/galary/gallery(2)810_lg.jpg   810w,
+                  ./images/galary/gallery(2)836_sm.jpg   836w,
+                  ./images/galary/gallery(2)990_md.jpg   990w,
+                  ./images/galary/gallery(2)1254_sm.jpg 1254w
+                "
+                src="./images/galary/gallery(2)418_sm.jpg"
+                alt="barber smears shaving cream on client's beard"
+                sizes="(min-width:1230px) 270px, (min-width:768px) 330px, (min-width:480px) 418px, 100vw"
+              />
+            </li>
+            <li class="galary__item">
+              <img
+                class="galary__img"
+                srcset="
+                  ./images/galary/gallery(3)270_lg.jpg   270w,
+                  ./images/galary/gallery(3)330_md.jpg   330w,
+                  ./images/galary/gallery(3)418_sm.jpg   418w,
+                  ./images/galary/gallery(3)540_lg.jpg   540w,
+                  ./images/galary/gallery(3)660_md.jpg   660w,
+                  ./images/galary/gallery(3)810_lg.jpg   810w,
+                  ./images/galary/gallery(3)836_sm.jpg   836w,
+                  ./images/galary/gallery(3)990_md.jpg   990w,
+                  ./images/galary/gallery(3)1254_sm.jpg 1254w
+                "
+                src="./images/galary/gallery(3)418_sm.jpg"
+                alt="barber doing facials to a client"
+                sizes="(min-width:1230px) 270px, (min-width:768px) 330px, (min-width:480px) 418px, 100vw"
+              />
+            </li>
+            <li class="galary__item">
+              <img
+                class="galary__img"
+                srcset="
+                  ./images/galary/gallery(4)270_lg.jpg   270w,
+                  ./images/galary/gallery(4)330_md.jpg   330w,
+                  ./images/galary/gallery(4)418_sm.jpg   418w,
+                  ./images/galary/gallery(4)540_lg.jpg   540w,
+                  ./images/galary/gallery(4)660_md.jpg   660w,
+                  ./images/galary/gallery(4)810_lg.jpg   810w,
+                  ./images/galary/gallery(4)836_sm.jpg   836w,
+                  ./images/galary/gallery(4)990_md.jpg   990w,
+                  ./images/galary/gallery(4)1254_sm.jpg 1254w
+                "
+                src="./images/galary/gallery(4)418_sm.jpg"
+                alt="barber shaves client's neck"
+                sizes="(min-width:1230px) 270px, (min-width:768px) 330px, (min-width:480px) 418px, 100vw"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form__wrap section">
+            <h2 class="form__title">Online-booking</h2>
+            <form class="form__item" action="post">
+              <div class="form__groop" type="groop">
+                <div class="form__thumb">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="Name"
+                    id="name"
+                    placeholder=" "
+                  />
+                  <label class="form__label" for="name">Name*</label>
+                </div>
+
+                <div class="form__thumb">
+                  <input
+                    class="form__input"
+                    type="tel"
+                    name="Name"
+                    id="phone"
+                    placeholder=" "
+                  />
+                  <label class="form__label" for="phone">Phone*</label>
+                </div>
+
+                <div class="form__thumb">
+                  <textarea
+                    class="form__input form__input--size"
+                    name="comments"
+                    id="comments"
+                    placeholder=" "
+                  ></textarea>
+                  <label class="form__label" for="comments">Message</label>
+                </div>
+
+                <button class="form__button" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contacts section">
+          <div class="container container--margin">
+            <h2 class="contacts__title">Contacts</h2>
+            <address class="contacts__address">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link--address" href=""
+                    >st. Vasilkovaya, 7A Kiev, 08132
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--tel"
+                    href="tel:+380441111111"
+                  >
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--email"
+                    href="mailto:barbershop@email.com"
+                    >barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="timetable">
+            <div class="container">
+              <p class="timetable__upper-title">Working hours</p>
+              <p class="timetable__lower-title">Every day from 9:00 to 22:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="width" style="height: 1000px"></div> -->
     </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <ul class="footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link link" href="">Instagram</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link link" href="">Youtube</a>
+          </li>
+        </ul>
+        <p class="footer__info">&#169; Copyright 2020</p>
+      </div>
+    </footer>
 
     <script src="./js/header.burger.js"></script>
   </body>

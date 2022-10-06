@@ -20,61 +20,18 @@
     max-width: 336px;
     padding: 208px 0;
 }
-.uppertitle {
-    display: flex;
-    align-items: center;
+.hero__upper-title {
+    @include upper-title($price-color);
 
-    font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
-    text-align: right;
-
-    margin-bottom: 20px;
-
-    color: $uppertitle-color-06;
-
-    &::before {
-        content: "";
-        width: 20px;
-        height: 1px;
-
-        margin-right: 10px;
-
-        background-color: $price-color;
-
-        @media screen and (min-width: 380px) {
-            justify-content: right;
-
-            width: 60px;
-
-            margin-right: 20px;
-        }
-    }
+    @extend %upper-before;
 }
 .hero__title {
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 41px;
-    line-height: calc(56 / 48);
-    letter-spacing: 0.05em;
-
-    margin-bottom: 20px;
-
-    color: $white-color;
+    @include main-title(41px, 56px, 20px, $white-color);
 
     @media screen and (min-width: 380px) {
         font-size: 48px;
     }
 }
-.lowertitle {
-    font-size: 16px;
-    line-height: calc(26 / 16);
-
-    letter-spacing: 0.02em;
-
-    color: $price-color;
+.hero__lower-title {
+    @include lower-title(0, $price-color);
 }

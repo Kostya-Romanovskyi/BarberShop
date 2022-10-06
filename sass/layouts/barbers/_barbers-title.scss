@@ -1,0 +1,11 @@
+.barbers {
+    background-color: $benefits;
+}
+.barbers__upper-title {
+    @include upper-title($main-color);
+
+    @extend %upper-before;
+}
+.barbers__title {
+    @include main-title(42px, 49px, 44px, $main-color);
+}

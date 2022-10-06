@@ -1,0 +1,28 @@
+.galary {
+}
+.galary__upper-title {
+    @include upper-title($main-color);
+
+    @extend %upper-before;
+
+    margin-bottom: 71px;
+}
+.galary__list {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+.galary__item {
+    $items: 1;
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+
+    @media screen and (min-width: 1230px) {
+        $items: 4;
+        flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
+}
+.galary__img {
+    width: 100%;
+}

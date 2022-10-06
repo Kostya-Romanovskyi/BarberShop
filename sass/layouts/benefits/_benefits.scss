@@ -1,0 +1,78 @@
+.benefits {
+}
+.benefits__upper-title {
+    @include upper-title($main-color);
+
+    @extend %upper-before;
+}
+.benefits__title {
+    @media screen and (max-width: 415px) {
+        @include main-title(38px, 49px, 20px, $main-color);
+    }
+
+    @include main-title(41px, 49px, 20px, $main-color);
+}
+.benefits__lower-title {
+    @include lower-title(44px, $secondary-color);
+}
+.benefits__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 0;
+
+    @media screen and (min-width: 480px) {
+        gap: 0 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+}
+.benefits__item {
+    @media screen and (max-width: 479px) {
+        flex-basis: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-basis: 194px;
+    height: 133px;
+
+    background-color: $benefits;
+
+    @media screen and (min-width: 480px) {
+        &:nth-child(2n) {
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1230px) {
+    }
+}
+
+.benefits__number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57 / 42);
+    letter-spacing: 0.05em;
+
+    color: $main-color;
+}
+.benefits__plus {
+    color: $active-color;
+}
+.benefits__text {
+    font-weight: 600;
+    font-size: 11px;
+
+    line-height: calc(15 / 11);
+
+    color: $main-color;
+}

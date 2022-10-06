@@ -52,16 +52,15 @@
 }
 
 .prices__button {
-    @extend %button;
+    @include main-button(160px, $white-color);
 
     display: block;
 
-    width: 160px;
-    height: 40px;
-
     margin: 0 auto;
 
-    &--white {
-        color: $white-color;
+    &:hover,
+    &:focus {
+        background-color: $active-color;
+        color: $main-color;
     }
 }

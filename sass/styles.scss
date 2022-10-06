@@ -1,11 +1,13 @@
 // utils
 @import "./utils/variables";
 @import "./utils/modern-normalize";
+@import "./utils/decimals-round";
 @import "./utils/placeholsers";
 @import "./utils/mixins";
 
 // GLOBAL-STYLES
 @import "./global/global-styles";
+@import "./global/section";
 
 // layouts
 
@@ -13,16 +15,32 @@
 @import "./layouts/header/header";
 @import "./layouts/header/flex-container";
 @import "./layouts/header/nav-list";
-@import "./layouts/header/contacts";
+@import "./layouts/header/connect";
 @import "./layouts/header/social-list";
 
 //hero
 @import "./layouts/hero/hero";
 
-@import "./global/section";
-
 //about
-
 @import "./layouts/about/about";
+
+// prices
 @import "./layouts/prices/prices";
 @import "./layouts/prices/price-list";
+
+// benefits
+@import "./layouts/benefits/benefits";
+
+// barbers
+@import "./layouts/barbers/barbers-title";
+@import "./layouts/barbers/barbers-cards";
+
+// galary
+@import "./layouts/galary/galary";
+
+//online booking
+@import "./layouts/form-and-contacts/form";
+@import "./layouts/form-and-contacts/contacts";
+
+// footer
+@import "./layouts/footer/footer";
