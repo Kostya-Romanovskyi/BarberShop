@@ -1,6 +1,3 @@
-.container--margin {
-    margin: 0;
-}
 .contacts {
     background-image: url("../images/contacts/contacts-bg@1x_sm.png");
     background-size: cover;
@@ -49,12 +46,28 @@
             screen and (min-resolution: 3dppx) {
             background-image: url("../images/contacts/contacts-bg@3x_lg.png");
         }
+
+        width: 90%;
+    }
+}
+.container--flex {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1230px) {
+        display: block;
     }
 }
 .contacts__title {
     @include main-title(42px, 49px, 40px, $white-color);
 
     text-align: center;
+
+    @media screen and (min-width: 1230px) {
+        text-align: left;
+    }
 }
 .contacts__address {
 }
@@ -67,8 +80,15 @@
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    display: flex;
+    align-items: center;
 }
 .contacts__link {
+}
+.contacts__icon {
+    stroke: $price-color;
+    fill: transparent;
 }
 .contacts__link--address {
     font-weight: 700;
@@ -77,6 +97,8 @@
     line-height: calc(30 / 18);
 
     letter-spacing: 0.02em;
+
+    padding-left: 16px;
 
     text-decoration: none;
 
@@ -89,6 +111,8 @@
 
     letter-spacing: 0.02em;
 
+    padding-left: 16px;
+
     text-decoration: none;
 
     color: $price-color;
@@ -99,11 +123,21 @@
     line-height: calc(30 / 18);
 
     letter-spacing: 0.02em;
+
+    padding-left: 16px;
+
     text-decoration-line: underline;
 
     color: $price-color;
 }
 .timetable {
+    @media screen and (min-width: 768px) {
+        margin-left: 114px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        margin-left: 0;
+    }
 }
 .timetable__upper-title {
     @include upper-title($white-color);

@@ -17,6 +17,44 @@
         screen and (min-resolution: 3dppx) {
         background-image: url("../images/prices/prices1440.png");
     }
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/prices/price-bg768_md.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-devise-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("../images/prices/price-bg1536_md.png");
+        }
+
+        @media screen and (min-devise-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url("../images/prices/price-bg2304_md.png");
+        }
+    }
+
+    @media screen and (min-width: 1230px) {
+        background-image: url("../images/prices/price-bg1280_lg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-devise-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: url("../images/prices/price-bg2560_lg.png");
+        }
+
+        @media screen and (min-devise-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url("../images/prices/price-bg3840_lg.png");
+        }
+    }
 }
 .prices__upper-title {
     @include upper-title($uppertitle-color-06);
@@ -29,4 +67,10 @@
 }
 .prices__title {
     @include main-title(42px, 49px, 44px, $white-color);
+}
+.prices__flex-container {
+    @media screen and (min-width: 1230px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }

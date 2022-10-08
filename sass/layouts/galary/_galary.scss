@@ -18,6 +18,11 @@
     $items: 1;
     flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 
+    @media screen and (min-width: 768px) {
+        $items: 2;
+        flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
+
     @media screen and (min-width: 1230px) {
         $items: 4;
         flex-basis: calc((100% - $indent * ($items - 1)) / $items);

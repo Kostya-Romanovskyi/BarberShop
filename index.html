@@ -15,11 +15,20 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header data-header">
       <div class="container header__container">
         <div class="header__logo">
           <a href="./index.html">
-            <img src="./images/logo-white.svg" alt="Logo BarberShop" />
+            <img
+              class="logo--white"
+              src="./images/logo-white.svg"
+              alt="Logo BarberShop"
+            />
+            <img
+              class="logo--black"
+              src="./images/logo-black.svg"
+              alt="Logo BarberShop"
+            />
           </a>
           <svg class="header__menu js-open-menu" width="40" height="40">
             <use href="./images/sprite.svg#menu40px"></use>
@@ -50,17 +59,30 @@
               <a class="connect__tel link" href="tel:+380441111111"
                 >+38 044 111 11 11
               </a>
-              <button class="connect__button" type="button">
+              <button
+                class="connect__button connect__button--indent"
+                type="button"
+              >
                 Online-booking
               </button>
             </div>
 
             <ul class="social-list social-list--none list">
               <li class="social-list__item">
-                <a class="social-list__link link" href="">Instagram</a>
+                <a
+                  class="social-list__link link"
+                  href="https://www.instagram.com/"
+                >
+                  Instagram
+                </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link link" href="">Youtube</a>
+                <a
+                  class="social-list__link link"
+                  href="https://www.youtube.com/"
+                >
+                  Youtube
+                </a>
               </li>
             </ul>
           </nav>
@@ -71,34 +93,99 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero-container">
+          <div class="hero__container">
             <p class="hero__upper-title">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__lower-title">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
+              We are experts in trendy men’s haircuts. <br />
+              We work quickly, carefully and with style.
             </p>
+            <ul class="slider">
+              <li class="slider__item"></li>
+              <li class="slider__item"></li>
+              <li class="slider__item"></li>
+            </ul>
+            <ul class="slider__list">
+              <li class="slider__buttons">
+                <a class="slider__links" href="">Atras</a>
+              </li>
+              <li class="slider__buttons slider__buttons--active">
+                <a class="slider__links slider__links--active" href=""
+                  >Siguiente</a
+                >
+              </li>
+            </ul>
+
+            <ul class="hero-list hero-list--indent">
+              <li class="hero-list__item">
+                <a
+                  class="hero-list__link link"
+                  href="https://www.instagram.com/"
+                  >Instagram
+                </a>
+              </li>
+              <li class="hero-list__item">
+                <a class="hero-list__link link" href="https://www.youtube.com/"
+                  >Youtube
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="about section">
-        <div class="container">
-          <p class="about__upper-title">About</p>
-          <h2 class="about__title">Best Barbershop in your city</h2>
-          <p class="about__lower-title lowertitle--indent">
-            If you want to add more confidence to your image, you should visit
-            us
-          </p>
-          <p class="about__text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-
-          <button class="about__button" type="button">online-booking</button>
+        <div class="container about__container">
+          <div class="about__img-set">
+            <ul class="about__img-list">
+              <li class="about__img-item">
+                <img
+                  srcset="
+                    ./images/about/about1_270_lg.jpg 270w,
+                    ./images/about/about1_330_md.jpg 330w,
+                    ./images/about/about1_540_lg.jpg 540w,
+                    ./images/about/about1_660_md.jpg 660w,
+                    ./images/about/about1_810_lg.jpg 810w,
+                    ./images/about/about1_990_md.jpg 990w
+                  "
+                  src="./images/about/about1_330_md.jpg"
+                  alt=""
+                  sizes="(min-width:1230px) 270px, (min-width:768px) 330px"
+                />
+              </li>
+              <li class="about__img-item">
+                <img
+                  srcset="
+                    ./images/about/about2_270_lg.jpg 270w,
+                    ./images/about/about2_330_md.jpg 330w,
+                    ./images/about/about2_540_lg.jpg 540w,
+                    ./images/about/about2_660_md.jpg 660w,
+                    ./images/about/about2_810_lg.jpg 810w,
+                    ./images/about/about2_990_md.jpg 990w
+                  "
+                  src="./images/about/about2_330_md.jpg"
+                  alt=""
+                  sizes="(min-width:1230px) 270px, (min-width:768px) 330px"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="about__title-wrap">
+            <p class="about__upper-title">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
+            <p class="about__lower-title lowertitle--indent">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about__text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="about__button" type="button">online-booking</button>
+          </div>
         </div>
       </section>
 
@@ -129,7 +216,7 @@
               </li>
             </ul>
 
-            <ul class="prices__list list">
+            <ul class="prices__list prices__list--dark list">
               <li class="prices__item">
                 <span class="prices__service">Trainee’s haircut</span>
                 <span class="prices__text">from 50 uah.</span>
@@ -158,26 +245,34 @@
       </section>
 
       <section class="benefits section">
-        <div class="container">
-          <p class="benefits__upper-title">Old traditional school</p>
-          <h2 class="benefits__title">&iquest;Why people come to us?</h2>
-          <p class="benefits__lower-title">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+        <div class="container benefits__flex">
+          <div class="benefits__wrap">
+            <p class="benefits__upper-title">Old traditional school</p>
+            <h2 class="benefits__title">&iquest;Why people come to us?</h2>
+            <p class="benefits__lower-title">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
 
           <ul class="benefits__list list">
             <li class="benefits__item">
               <b class="benefits__number"
                 >600 <sup class="benefits__plus">+</sup></b
               >
-              <p class="benefits__text">Satisfied customers per day</p>
+              <p class="benefits__text">
+                Satisfied customers <br />
+                per day
+              </p>
             </li>
             <li class="benefits__item">
               <b class="benefits__number"
                 >50<sup class="benefits__plus">+</sup></b
               >
-              <p class="benefits__text">Awards for excellent service</p>
+              <p class="benefits__text">
+                Awards for excellent <br />
+                service
+              </p>
             </li>
             <li class="benefits__item">
               <b class="benefits__number"
@@ -189,7 +284,10 @@
               <b class="benefits__number"
                 >100<sup class="benefits__plus">+</sup></b
               >
-              <p class="benefits__text">Gifts for regular customers</p>
+              <p class="benefits__text">
+                Gifts for regular <br />
+                customers
+              </p>
             </li>
           </ul>
         </div>
@@ -421,31 +519,33 @@
         </div>
       </section>
       <section class="form">
-        <div class="container">
+        <div class="container container--form">
           <div class="form__wrap section">
             <h2 class="form__title">Online-booking</h2>
             <form class="form__item" action="post">
               <div class="form__groop" type="groop">
-                <div class="form__thumb">
-                  <input
-                    class="form__input"
-                    type="text"
-                    name="Name"
-                    id="name"
-                    placeholder=" "
-                  />
-                  <label class="form__label" for="name">Name*</label>
-                </div>
+                <div class="form__flex">
+                  <div class="form__thumb form__thumb--width">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="Name"
+                      id="name"
+                      placeholder=" "
+                    />
+                    <label class="form__label" for="name">Name*</label>
+                  </div>
 
-                <div class="form__thumb">
-                  <input
-                    class="form__input"
-                    type="tel"
-                    name="Name"
-                    id="phone"
-                    placeholder=" "
-                  />
-                  <label class="form__label" for="phone">Phone*</label>
+                  <div class="form__thumb form__thumb--width">
+                    <input
+                      class="form__input"
+                      type="tel"
+                      name="Name"
+                      id="phone"
+                      placeholder=" "
+                    />
+                    <label class="form__label" for="phone">Phone*</label>
+                  </div>
                 </div>
 
                 <div class="form__thumb">
@@ -464,35 +564,45 @@
           </div>
         </div>
         <div class="contacts section">
-          <div class="container container--margin">
-            <h2 class="contacts__title">Contacts</h2>
-            <address class="contacts__address">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <a class="contacts__link contacts__link--address" href=""
-                    >st. Vasilkovaya, 7A Kiev, 08132
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a
-                    class="contacts__link contacts__link--tel"
-                    href="tel:+380441111111"
-                  >
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  <a
-                    class="contacts__link contacts__link--email"
-                    href="mailto:barbershop@email.com"
-                    >barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="timetable">
-            <div class="container">
+          <div class="container container--flex">
+            <div class="container__contacts">
+              <h2 class="contacts__title">Contacts</h2>
+              <address class="contacts__address">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#map-pin"></use>
+                    </svg>
+                    <a class="contacts__link contacts__link--address" href=""
+                      >st. Vasilkovaya, 7A Kiev, 08132
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#phone"></use>
+                    </svg>
+                    <a
+                      class="contacts__link contacts__link--tel"
+                      href="tel:+380441111111"
+                    >
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="contacts__item">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#mail"></use>
+                    </svg>
+                    <a
+                      class="contacts__link contacts__link--email"
+                      href="mailto:barbershop@email.com"
+                      >barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="timetable">
               <p class="timetable__upper-title">Working hours</p>
               <p class="timetable__lower-title">Every day from 9:00 to 22:00</p>
             </div>
@@ -506,10 +616,14 @@
       <div class="container footer__container">
         <ul class="footer-list">
           <li class="footer-list__item">
-            <a class="footer-list__link link" href="">Instagram</a>
+            <a class="footer-list__link link" href="https://www.instagram.com/">
+              Instagram
+            </a>
           </li>
           <li class="footer-list__item">
-            <a class="footer-list__link link" href="">Youtube</a>
+            <a class="footer-list__link link" href="https://www.youtube.com/">
+              Youtube
+            </a>
           </li>
         </ul>
         <p class="footer__info">&#169; Copyright 2020</p>
@@ -517,5 +631,11 @@
     </footer>
 
     <script src="./js/header.burger.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

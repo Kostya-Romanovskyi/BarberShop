@@ -61,6 +61,10 @@
 .connect__button {
     @include main-button(194px, $main-color);
 
+    &--indent {
+        margin-right: 16px;
+    }
+
     &:hover,
     &:focus {
         background-color: $active-color;

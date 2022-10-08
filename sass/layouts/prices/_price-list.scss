@@ -8,12 +8,28 @@
     @media screen and (min-width: 444px) {
         padding: 30px 32px;
     }
+
+    @media screen and (min-width: 1230px) {
+        padding: 0;
+    }
 }
 .prices__list {
     &:not(:last-child) {
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 1230px) {
+        width: 100%;
+        padding: 30px 40px;
+    }
+
+    &--dark {
+        @media screen and (min-width: 1230px) {
+            background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+        }
+    }
 }
+
 .prices__item {
     display: flex;
     align-items: baseline;

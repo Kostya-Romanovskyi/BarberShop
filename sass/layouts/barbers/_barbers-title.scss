@@ -5,6 +5,10 @@
     @include upper-title($main-color);
 
     @extend %upper-before;
+
+    @media screen and (max-width: 354px) {
+        font-size: 9px;
+    }
 }
 .barbers__title {
     @include main-title(42px, 49px, 44px, $main-color);

@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     overflow: hidden;
+    z-index: 200;
 }
 .header__container {
     display: flex;
@@ -11,6 +12,18 @@
     padding-top: 40px;
 }
 .header__logo {
+}
+.logo--white {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.logo--black {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
 .header__menu {
     &.is-open {

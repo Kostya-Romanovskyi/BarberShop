@@ -64,6 +64,13 @@
             margin-bottom: 0;
         }
     }
+
+    @media screen and (min-width: 1230px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .nav__link {
