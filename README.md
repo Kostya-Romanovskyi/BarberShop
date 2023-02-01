@@ -1,2 +1,2 @@
 # Barber shop
-Using HTML, CSS, SCSS
+Using HTML, CSS, SCSS, JavaScript
